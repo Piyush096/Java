@@ -1,4 +1,4 @@
-public class AA_AAA_Hello_World
+class A
 {
     public static void main(String args[])
     {
@@ -8,5 +8,6 @@ public class AA_AAA_Hello_World
     }
 }
 /*
-*using println java will put a new line at the end . but in case of print java will not put new line
+*using println java will put a new line at the end . but in case of print java will not put new line.
+
 */
