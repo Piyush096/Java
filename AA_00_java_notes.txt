@@ -1,0 +1,46 @@
+*public class AA_01_hello world
+{ 
+  public static void main(string arg[])
+  {
+    System.out.println("hello world");
+  }  
+}
+
+
+*here in this program using println java will put a new line at the end but in case of print new line will not added .
+
+*public static void main(string arg[]) :- a java program begins execution by calling main().here void simply tells the complier that main()     does not return a value .
+                                           
+* java is case sensitive       
+
+*public class AA_02_SUM
+{
+    public static void main(String[] args)
+    {
+        int i = 10;
+        int j = 20;
+
+        int k = i + j;
+        System.out.println(k);
+
+    }
+}                                      
+
+*java requries that variavles be declares before they are used 
+  general form of a variable declaration - type var-name;
+  here the types specifies the type of variable being declared.
+  
+* There are 61 keywords currently defined in the java language.
+
+# DATA TYLPES :-
+
+java defines eight primitive types(simple types) of data:- bytes, short, int, long, char, float, double, boolean.
+
+*Data types       its size(in bytes)       ranges
+ 1. int                4                     
+ 2. byte               1
+ 3. short              2                     
+ 4. long               8
+ 5. float              4
+ 6. double             8
+ 7. boolean            1  
