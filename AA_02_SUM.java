@@ -50,7 +50,17 @@ we cant access the value of the string because the scan.nextInt(int,float,double
 read the newline(\n){integer,float... all the not read any whitespace/\t...}character in input created by
 hitting "ENTER"/"SPACE",and so the call to scan.nextline returns after reading the new line.
 
+*The Scanner class in java.util package used for obtaining the input of the primitive types like
+int, double, etc. and strings. It is the easiest way to read input in a Java program
 
+*next() Method: The next() method in java is present in the Scanner class and is used to get the
+input from the user. In order to use this method, a Scanner object needs to be created.
+This method can read the input only until a space(” “) is encountered.
+In other words, it finds and returns the next complete token from the scanner.
+It cannot read those words having space in it.
 
-
+*nextLine() Method: The nextLine() method in java is present in the Scanner class
+and is used to get the input from the user. In order to use this method, a Scanner object needs to be created.
+This method can read the input till the end of line. In other words, it can take input until the line change or
+new line and ends input of getting ‘\n’ or press enter.
 */
