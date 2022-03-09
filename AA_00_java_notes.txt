@@ -34,13 +34,36 @@
 
 # DATA TYLPES :-
 
-java defines eight primitive types(simple types) of data:- bytes, short, int, long, char, float, double, boolean.
+java defines eight primitive types(simple types) of data:-  Int, Char, Float, Boolean.
+ the general form of finding unsigned range :- -2^n-1 to (2^n-1)-1 , wherwe n = size of width of data type in bits . 
 
-*Data types       its size(in bytes)       ranges
- 1. int                4                     
- 2. byte               1
- 3. short              2                     
- 4. long               8
- 5. float              4
- 6. double             8
- 7. boolean            1  
+
+1) intiger types :-
+
+java defines four intiger typrs :- bytes , short , int , & long . all these are signed , positive , and negative values.
+*java does not support unsigned(non-negative) , positive only integer.
+
+*BYTES :-
+
+the smallest integer type is byte . this is one of byte(8 bit) and has range from -128 to 127.
+useful when we working with a stream of data from a network or files.
+
+*SHORT:-
+
+short is a signed 2 bytes (16 bits) type , it has a range from -32,768 to 32,767.
+it has probably the least used java type.
+
+*INT :-
+
+it is a signed 4 byte (32 bit) type that has a range from -2,147,483,648 to 2,147,483,647 .
+variable of type int are commonly employed to control loops and to index.
+
+*LONG :-
+
+long is a signed 8 bytes (64 bits) type and is useful for those occasions where an int type is not large enough to hold the desired value .
+the range of a long is quite large .
+ 
+2) floating types :-
+
+*
+

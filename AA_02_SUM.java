@@ -1,9 +1,13 @@
+import java.util.Scanner;
 public class AA_02_SUM
 {
     public static void main(String[] args)
     {
-        int i = 10;
-        int j = 20;
+        System.out.print("value of a is ");
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        System.out.print("value of b is ");
+        int j = scan.nextInt();
 
         int k = i + j;
         System.out.println(k);

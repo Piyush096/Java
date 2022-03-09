@@ -14,3 +14,9 @@ public class AA_03_IFSAMPLE
 
     }
 }
+/*
+* the if statments
+  if(conditions)statments;
+
+here, condition is a boolean expression.
+*/
