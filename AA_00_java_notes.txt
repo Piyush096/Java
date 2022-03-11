@@ -63,7 +63,18 @@ variable of type int are commonly employed to control loops and to index.
 long is a signed 8 bytes (64 bits) type and is useful for those occasions where an int type is not large enough to hold the desired value .
 the range of a long is quite large .
  
-2) floating types :-
+2) FLOATING TYPES :-
 
+*floating point numbers , also known as real numbers.
+
+*FLOAT:-
+float is a 4 byte(32 bits) type that has range from 1.4e-045 to 3.4e+038 variable of type float are useful when we need fractional component .
+
+*DOUBLE:-
+double is a 8 bytes(64 bits) type that has range from 4.9e-324 to 1.8e+308 
+all the transcendental math , as sin(),cos(),.....return double values . when we need to maintain accuracy over many itertative calculations .
+
+3) CHARACTERS :-
 *
+* a key point to understand is that java uses unicode to represent characters .
 

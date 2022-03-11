@@ -1,10 +1,10 @@
-class A
+class AA_01_Hello_World
 {
     public static void main(String args[])
     {
-        System.out.print("hello");
+        System.out.print("hello\t");
         System.out.println("hello");
-        System.out.print("hello");
+        System.out.println("hello\n");
     }
 }
 /*
