@@ -75,6 +75,5 @@ double is a 8 bytes(64 bits) type that has range from 4.9e-324 to 1.8e+308
 all the transcendental math , as sin(),cos(),.....return double values . when we need to maintain accuracy over many itertative calculations .
 
 3) CHARACTERS :-
-*
 * a key point to understand is that java uses unicode to represent characters .
 
