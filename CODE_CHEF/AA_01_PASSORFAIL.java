@@ -1,5 +1,5 @@
 import java.util.Scanner;
- class PASSORFAIL{
+ class AA_01_PASSORFAIL{
     public static void main(String args[]){
 
         Scanner sc = new Scanner(System.in);
