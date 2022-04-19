@@ -1,22 +1,30 @@
-import java.util.Scanner;
-public class test{
+class box{
+    double width;
+    double height;
+    double depth;
+
+ double volume(double w,double h,double d){
+    width = w;
+    height = h;
+    depth = d;
+    return width * height * depth;
+ }
+//  void setdim(double w,double h,double d){
+//     width = w;
+//     height = h;
+//     depth = d;
+//     }
+}
+class test{
     public static void main(String args[]){
 
-        Scanner sc = new Scanner(System.in);
+    box mybox1 = new box();
+    box mybox2 = new box();
 
-        int t = sc.nextInt();
-        for(int i = 0; i < t; i++){
-            int n = sc.nextInt();
-            int x = sc.nextInt();
-            int p = sc.nextInt();
+    // mybox1.volume(10,20,15);
+    // mybox2.volume(3,6,9);
 
-            if((x*3)-(n-x)>= p)
-            System.out.println("PASS\n");
-            else
-            System.out.println("FAIL\n");
-
-
-        }
-
+    System.out.println(mybox1.volume(10,20,15));
+    System.out.println(mybox2.volume(3,6,9));
     }
 }
