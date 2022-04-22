@@ -21,3 +21,7 @@ class AA_08_Which_Mixture{
         }
     }
 }
+
+// one problem in this giving some error
+
+//problem related to exception case like lang
