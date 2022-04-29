@@ -1,5 +1,5 @@
 import java.util.Scanner;
-  class AA_23_TALLER
+  class AA_24_SEMCOURSES
   {
     public static void main(String args[])
     {
@@ -12,13 +12,11 @@ import java.util.Scanner;
 
             int x = s.nextInt();
             int y = s.nextInt();
+            int z = s.nextInt();
 
-            if (x < y)
-            {
-                System.out.println("Y");
-            }
-            else
-                System.out.println("X");
+
+                System.out.println(x*y*z);
+
 
         }
     }
