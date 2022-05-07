@@ -6,14 +6,22 @@ class test2{
         int x = s.nextInt();
 
         while(x-- >0){
-            int a = s.nextInt();
-            int b = s.nextInt();
+            int x = s.nextInt();
+            int y = s.nextInt();
+            int z = s.nextInt();
 
-            if(a * 100 >= b * 10){
-                System.out.println("CLOTH");
-            }else{
-                System.out.println("DISPOSABLE");
+            if(x+y <= z){
+            System.out.println("2");
             }
+            else if(x+y >= z && x <= z){
+            System.out.println("1");
+            }
+             else if(x+y >= z){
+            System.out.println("0");
+            }
+
+
+
         }
     }
 }
