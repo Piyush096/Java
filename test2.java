@@ -3,9 +3,9 @@ class test2{
     public static void main(String args[]){
         Scanner s = new Scanner(System.in);
 
-        int x = s.nextInt();
+        int t = s.nextInt();
 
-        while(x-- >0){
+        while(t-- >0){
             int x = s.nextInt();
             int y = s.nextInt();
             int z = s.nextInt();
