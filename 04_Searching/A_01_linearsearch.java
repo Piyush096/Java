@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-public class AB_06_linearsearch{
+public class A_01_linearsearch{
     public static void main(String[] args){
         //Scanner in = new Scanner(System.in);
         int [] nums = {5, 23, 44, -4, 56, 34};
@@ -14,8 +14,8 @@ public class AB_06_linearsearch{
             return -1;
         }
         for(int index = 0; index < arr.length; index++){
-            int element = arr[index];
-            if(element == target){
+            //int element = arr[index];
+            if(arr[index] == target){
                 return index;
             }
         }
