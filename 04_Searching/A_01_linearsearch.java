@@ -4,7 +4,7 @@ public class A_01_linearsearch{
     public static void main(String[] args){
         //Scanner in = new Scanner(System.in);
         int [] nums = {5, 23, 44, -4, 56, 34};
-        int target = 44;
+        int target = 44; 
         int ans = linearsearch(nums, target);
         System.out.println(ans);
 

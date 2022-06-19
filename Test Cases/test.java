@@ -1,31 +1,28 @@
-class box{
-    double width;
-    double height;
-    double depth;
+import java.util.Scanner;
+import java.util.Arrays;
 
- double volume(double w,double h,double d){
-    width = w;
-    height = h;
-    depth = d;
-    return width * height * depth;
- }
-//  void setdim(double w,double h,double d){
-//     width = w;
-//     height = h;
-//     depth = d;
-//     }
-}
-class test{
-    public static void main(String args[]){
+public class test{
+    public static void main(String [] args){
 
-    box mybox1 = new box();
-    box mybox2 = new box();
+    Scanner input = new Scanner(System.in);
+    String [] symbols = new String[4];
 
-    // mybox1.volume(10,20,15);
-    // mybox2.volume(3,6,9);
+    int x = 0;
 
-    System.out.println(mybox1.volume(10,20,15));
-    System.out.println(mybox2.volume(3,6,9));
+    for(int i = 0; i< 4; i++){
+        symbols[i] = input.next();
+
+        if((symbols.equal(new String("X++"))) || (symbols.equal(new String("++X")))){
+           x = x + 1;
+        }
+        else if((symbols.equal(new String("X--"))) || (symbols.equal(new String("--X")))){
+            x = x - 1;
+        }
+
     }
+        // String pot= Arrays.toString(symbols);
+        // System.out.print(pot);
+        System.out.println(x);
 }
 
+}
