@@ -14,7 +14,7 @@ public class AB_07_string_search{
             if(str.charAt(i) == target){
                 return true;
             }
-        }
+        } 
         return false;
 
     }
