@@ -15,3 +15,4 @@ public class A_06_minvalue_array{
         return minval;
     }
 }
+

@@ -2,7 +2,7 @@ public class B_02_orderAgnostic_Binarysearch{
     public static void main(String [] args){
 
       int [] arr = {20,23,67,87,89,95};
-       int target = 67;
+       int target = 87;
        int ans = orderAgnostic_binarysearch(arr, target);
        System.out.println(ans);
 
@@ -20,25 +20,30 @@ public class B_02_orderAgnostic_Binarysearch{
 
         int mid = start + (end - start ) / 2;
 
-        if(target == mid){
-            return mid;
-        }
+
          if(isAsc){
 
         if(target < arr[mid]){
             end = mid -1;
         }
-        else{
+        else if (target > arr[mid]) {
             start = mid +1;
         }
+        else {
+            return mid;
+        }
+
         }
         else{
 
         if(target > arr[mid]){
             end = mid -1;
         }
-        else{
+        else if(target < arr[mid]){
             start = mid +1;
+        }
+        else {
+            return mid;
         }
         }
         }
