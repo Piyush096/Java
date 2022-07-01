@@ -1,8 +1,8 @@
 import java.util.Scanner;
-class AA_05_bubble_short{
-    public static void main(String args[]){
+import java.util.Arrays;
 
-        int temp;
+class A_01_bubble_sort{
+    public static void main(String args[]){
 
         Scanner s = new Scanner(System.in);
 
@@ -19,8 +19,14 @@ class AA_05_bubble_short{
 
             System.out.print(arr[i]+" ");
             System.out.println();
-
         }
+        bubble_sort(arr);
+        System.out.println(Arrays.toString(arr));
+
+    }
+    static void bubble_sort(int [] arr){
+
+        int temp;
 
         for(int i = 0; i < arr.length-1; i++){
 
@@ -39,10 +45,5 @@ class AA_05_bubble_short{
             if(count == 0)
             break;
         }
-        System.out.println("SORTED ARRAY IS:-");
-        for(int i = 0; i < arr.length; i++){
-            System.out.println(arr[i]);
-        }
-
     }
 }
