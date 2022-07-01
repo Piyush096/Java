@@ -21,6 +21,7 @@ public class B_06_2D_binarysearch{
 
 
     }
+    // when array is not sorted we simply use the linear search in the array .
 
     // this logic is used when the 2d array is strictly increasing or decreasing order in row and coloumn wise.
     static int[] search(int[][] nums , int target){
