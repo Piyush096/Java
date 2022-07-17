@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class AB_07_string_search{
+public class A_02_string_linear_search{
     public static void main(String[] args){
         String name = "piyush";
         char target = 'u';
@@ -14,7 +14,7 @@ public class AB_07_string_search{
             if(str.charAt(i) == target){
                 return true;
             }
-        } 
+        }
         return false;
 
     }

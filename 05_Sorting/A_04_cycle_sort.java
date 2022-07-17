@@ -49,8 +49,6 @@ public class A_04_cycle_sort{
 // class Solution {
 //     public List<Integer> findDisappearedNumbers(int[] nums) {
 
-//         void cycle_sort(int[] nums){
-
 //             int i = 0;
 
 //             while(i < nums.length){
@@ -74,10 +72,9 @@ public class A_04_cycle_sort{
 //                     ans.add(index + 1);
 //                 }
 //             }
-//         }
 //         return ans;
+//         }
 
-//     }
 //     void swap(int [] nums, int i, int correct){
 
 //         int temp = nums[i];

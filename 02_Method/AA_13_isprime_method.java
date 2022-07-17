@@ -5,7 +5,7 @@ class AA_13_isprime_method{
 
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-boolean ans = isprime(n);
+        boolean ans = isprime(n);
         System.out.println(ans);
     }
     static boolean isprime(int n){
