@@ -21,6 +21,5 @@ class AA_13_isprime_method{
         }
         return c * c > n;
     }
-
 }
 
