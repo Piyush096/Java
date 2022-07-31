@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-public class AB_02_input2D_array{
+public class A_02_input2D_array{
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
 
@@ -31,7 +31,7 @@ public class AB_02_input2D_array{
         // }
 
         //one more way to print the output the output:-
-        for(int[] a : arr ){ 
+        for(int[] a : arr ){
             System.out.println(Arrays.toString(a));
         }
 
