@@ -20,3 +20,16 @@ public class A_08_search {
 
     }
 }
+
+
+//  public static boolean beettersortying(int input[], int startindex) {
+
+//     if(startindex >= input.length - 1){
+//         return true;
+//     }
+//     if(input[startindex] > input[startindex + 1]){
+//         return false;
+//     }
+//     boolean smallans = beettersortying(input, startindex + 1);
+//     return smallans;
+// }
