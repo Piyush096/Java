@@ -1,19 +1,17 @@
-public class B_01_Binarysearch{
+public class B_03_ceilingno{
     public static void main(String[] args){
 
        int [] arr = {-12,-4,0,20,23,67,87,89,95};
-       int target = 20;
-       int ans = binarysearch(arr, target);
+       int target = 25;
+       int ans = ceilingno(arr, target);
        System.out.println(ans);
 
     }
-    static int binarysearch(int [] arr, int target){
+    static int ceilingno(int [] arr, int target){
         int start = 0;
         int end = arr.length-1;
 
         while(start <= end ){
-            //finding middle term
-        //    int mid = (start + end )/ 2;  we can not do this in the case where we taking large size of array .it might exceeds the range of integer
 
         int mid = start + (end - start ) / 2;
 
@@ -27,6 +25,9 @@ public class B_01_Binarysearch{
             return mid;
         }
         }
-        return -1;
+        return start;
     }
 }
+// ceiling no(lower bound) :-
+// in a sorted aray and a target value the ciling of the target is the smallest element in array greater than or
+// equal to the target .
