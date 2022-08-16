@@ -54,7 +54,8 @@ So for instance, say we have:
                        | 3     |
                        +−−−−−−−+
 
-a contains a reference to the array, which is elsewhere in memory and has a contiguous data block containing 1, 2, and 3.
+a contains a reference to the array, which is elsewhere in memory and has a contiguous data block containing 1, 2, and 3.in 1-D array it has contiguous
+data block.
 
 
 Now let's look at an object array (where the Example class stores the given constructor parameter as a private x field):
@@ -75,7 +76,7 @@ a: Ref51234−−−>| Example[] |     +−−−>| Example |
                               |                     +−−−−−−−−−+
                               |   +−−−−−−−−−+
                               +−−>| Example |
-                                  +−−−−−−−−−+
+                                  +−−−−−−−−−+ 
                                   | x: 3    |
                                   +−−−−−−−−−+
 
