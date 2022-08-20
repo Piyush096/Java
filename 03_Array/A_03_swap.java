@@ -15,12 +15,12 @@ public class A_03_swap{
     //     arr[index1] = arr[index2];
     //     arr[index2] = temp;
 
-    int x = 123456;
+    // int x = 123456;
 
-    int[] arr = new int[]
-     = Arrays.toString(x);
+    // int[] arr = new int[]
+    //  = Arrays.toString(x);
 
-    System.out.println(arr);
+    // System.out.println(arr);
 
     }
 }

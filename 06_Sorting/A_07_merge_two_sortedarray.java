@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class A_05_merge_two_sortedarray {
+public class A_07_merge_two_sortedarray {
     public static void main(String[] args){
 
       int[] nums1 = {2, 4, 7};

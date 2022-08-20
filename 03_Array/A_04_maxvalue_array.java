@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class AB_04_maxvalue{
+public class A_04_maxvalue_array{
     public static void main(String[] args){
         int[] arr ={1,2,23,9,8};
         System.out.println(max(arr));

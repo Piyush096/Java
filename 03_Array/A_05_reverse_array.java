@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class AB_05_reverse_array{
+public class A_05_reverse_array{
     public static void main(String[] args){
         int[] arr = {1,2,3,4};
 

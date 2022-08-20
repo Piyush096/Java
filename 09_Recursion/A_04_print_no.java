@@ -18,3 +18,5 @@ public class A_04_print_no {
         System.out.print(n +" ");
     }
 }
+
+/*here we also solve this problem using i + 1*/
