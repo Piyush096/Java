@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class A_05_merege_sort {
+public class A_05_merge_sort {
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);
@@ -90,7 +90,7 @@ public class A_05_merege_sort {
 // import java.util.Scanner;
 
 
-// public class A_05_merege_sort{
+// public class A_05_merge_sort{
 //     public static void main(String[] args){
 
 //         int [] array = {6, 5, 4, 2};
