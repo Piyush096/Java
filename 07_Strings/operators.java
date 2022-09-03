@@ -21,7 +21,7 @@ public class operators{
         //this will same as after few steps : "a" + "1";
 
 
-        System.out.println("piyush" + new ArrayList<>());
+        // System.out.println("piyush" + new ArrayList<>());
 
     }
 }

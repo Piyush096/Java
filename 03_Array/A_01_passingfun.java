@@ -11,7 +11,7 @@ class A_01_passingfun{
         ros[i] = s.nextInt();
       }
 
-      
+
 
       String pot= Arrays.toString(ros);
       System.out.print(pot);
