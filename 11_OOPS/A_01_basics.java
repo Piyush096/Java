@@ -1,21 +1,21 @@
-class Student{
-
-    int r_no;
-    String name;
-    float marks;
-}
-public class A_01_basics {
-    public static void main(String[] args){
-
-        Student student1 = new Student();
-
-        student1.r_no = 11;
-        student1.name = "piyush";
-        student1.marks = 9.7f;
+class volume{
 
 
-
+    void area(int a){
+        System.out.println("area is"+ a*a);
+    }
+    void area(int a , int b){
+        System.out.println("area is"+ (a + b));
     }
 
 }
 
+public class A_01_basics {
+    public static void main(String[] args){
+
+        volume vol = new volume();
+
+        vol.area(3);
+        vol.area(4, 6);
+    }
+}

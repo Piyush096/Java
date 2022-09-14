@@ -19,4 +19,6 @@ public class A_04_print_no {
     }
 }
 
-/*here we also solve this problem using i + 1*/
+/*here we also solve this problem using i + 14
+ * 
+*/
