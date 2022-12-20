@@ -16,11 +16,11 @@ public class A_07{
 
             for(int col =row; col >= 1; col--){
 
-                System.out.print(col);
+                System.out.print(row);
             }
             for(int col = 2 ; col <= row; col++){
 
-                System.out.print(col);
+                System.out.print(row);
             }
 
 

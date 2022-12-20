@@ -59,5 +59,6 @@ class Account{
     a1.checkBalance();
     a1.withdraw(15000);
     a1.checkBalance();
-    }}
+    }
+}
 
