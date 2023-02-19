@@ -1,3 +1,7 @@
+
+
+// to take input and print the linked list;
+
 import java.util.Scanner;
 
 class Node{
@@ -11,7 +15,7 @@ class Node{
     }
 }
 
-public class A_01_test{
+public class A_01_Linkedlist1{
 
     public static Node take_Node(){
 
@@ -23,7 +27,7 @@ public class A_01_test{
          while(true)
          {
             int data = in.nextInt();
-            
+
 
             if (data == -1)
                 break;
@@ -64,8 +68,3 @@ public class A_01_test{
 
 
 }
-
-
-
-
-

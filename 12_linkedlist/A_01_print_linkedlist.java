@@ -38,6 +38,8 @@ class A_01_print_linkedlist{
 
          while(data != -1){
             Node<Integer> currNode = new Node<Integer>(data);
+            // tail.next=currNode;
+            currNode.next=null;
             if(head == null){
                 head = currNode;
                 tail = currNode;
