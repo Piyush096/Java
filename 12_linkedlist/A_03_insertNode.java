@@ -82,7 +82,4 @@ public class A_03_insertNode {
         printNode(head);
     }
 
-
-
-
 }
