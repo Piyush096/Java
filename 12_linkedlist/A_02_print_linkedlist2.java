@@ -11,7 +11,7 @@ class Node<T>{
     }
 }
 
-class A_01_print_linkedlist{
+class A_02_print_linkedlist2{
 
     // public static Node<Integer> createlinkedlist(){
 

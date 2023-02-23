@@ -15,7 +15,7 @@ class Node{
     }
 }
 
-public class A_01_Linkedlist1{
+public class A_01_print_Linkedlist1{
 
     public static Node take_Node(){
 
