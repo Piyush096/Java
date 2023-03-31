@@ -48,7 +48,7 @@ public class A_01_print_Linkedlist1{
         return head;
     }
 
-    public static Node printNode(Node head){
+    public static void printNode(Node head){
 
         Node temp = head;
 
@@ -56,7 +56,7 @@ public class A_01_print_Linkedlist1{
             System.out.print(temp.data+ " ");
             temp = temp.next;
         }
-        return head;
+       // return head;
     }
     public static void main(String [] args){
 
