@@ -10,7 +10,7 @@ class Node{
         this.next = null;
     }
 }
-public class A_08_reverse_ll{
+public class A_10_reverse_ll{
 
     public static Node takNode(){
 

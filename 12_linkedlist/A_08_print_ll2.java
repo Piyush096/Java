@@ -11,7 +11,7 @@ class node{
     }
 }
 
-public class A_01_print_ll2 {
+public class A_08_print_ll2 {
 
     node head;
 
@@ -64,7 +64,7 @@ public class A_01_print_ll2 {
 
 
     public static void main(String args[]){
-        A_01_print_ll2 list = new A_01_print_ll2();
+        A_08_print_ll2 list = new A_08_print_ll2();
 
         list.addlast(7);
         list.addlast(3);
