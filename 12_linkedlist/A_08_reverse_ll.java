@@ -60,7 +60,7 @@ public class A_08_reverse_ll{
         }
 
         reverse_ll(head.next);
-        //System.out.print(head.data + " --> ");
+        System.out.print(head.data + " --> ");
     }
 
     public static void main(String[] args){

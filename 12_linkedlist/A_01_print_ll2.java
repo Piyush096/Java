@@ -1,10 +1,11 @@
 class node{
 
-    String data;
+    int  data;
     node next;
 
 
-    node(String data){
+    node(int data){
+
         this.data = data;
         this.next = null;
     }
@@ -13,8 +14,9 @@ class node{
 public class A_01_print_ll2 {
 
     node head;
+
     //add first
-    // public void addfirst(String data){
+    // public void addfirst(int data){
     //     node newnode = new node(data);
     //     if(head == null){
     //         head = newnode;
@@ -24,7 +26,10 @@ public class A_01_print_ll2 {
     //     newnode.next = head;
     //     head = newnode;
     // }
-    public void addlast(String data){
+
+
+    public void addlast(int data){
+
         node newnode = new node(data);
 
         if(head == null){
@@ -61,8 +66,8 @@ public class A_01_print_ll2 {
     public static void main(String args[]){
         A_01_print_ll2 list = new A_01_print_ll2();
 
-        list.addlast("7");
-        list.addlast("is");
+        list.addlast(7);
+        list.addlast(3);
         list.printlist();
     }
 
