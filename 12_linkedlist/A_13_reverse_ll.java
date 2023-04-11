@@ -10,7 +10,8 @@ class Node{
         this.next = null;
     }
 }
-public class A_12_reverse_ll{
+
+public class A_13_reverse_ll {
 
     public static Node takNode(){
 
@@ -41,6 +42,20 @@ public class A_12_reverse_ll{
         return head;
     }
 
+    public static Node reverse_ll(Node head){
+         if(head == null || head.next == null){
+            return head;
+         }
+         Node smallhead = reverse_ll(head.next);
+         Node tail = smallhead;
+         while(tail.next != null){
+            tail = tail.next;
+         }
+         tail.next = head;
+         head.next = null;
+         return smallhead;
+    }
+
     public static void print_ll(Node head){
 
         Node temp = head;
@@ -53,20 +68,11 @@ public class A_12_reverse_ll{
         System.out.println();
     }
 
-    public static void reverse_ll(Node head){
-
-        if(head == null){
-            return;
-        }
-
-        reverse_ll(head.next);
-        System.out.print(head.data + " --> ");
-    }
-
     public static void main(String[] args){
         Node head = takNode();
+        head = reverse_ll(head);
         print_ll(head);
-        reverse_ll(head);
+
     }
 
 }
