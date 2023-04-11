@@ -9,7 +9,7 @@ class Node{
         this.next = null;
     }
 }
-public class A_06_Append_last_N_tofirst {
+public class A_07_Append_last_N_tofirst {
     public static Node takeNode(){
 
         Node head = null;

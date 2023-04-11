@@ -10,7 +10,7 @@ class Node{
 
     }
 }
-public class A_07_Eliminate_duplicates {
+public class A_09_Eliminate_duplicates {
 
     public static Node take_Node(){
 

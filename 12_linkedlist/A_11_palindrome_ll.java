@@ -8,7 +8,7 @@ class Node{
         this.next = null;
     }
 }
-public class A_09_palindrome_ll {
+public class A_11_palindrome_ll {
 
     public static Node take_Node(){
 

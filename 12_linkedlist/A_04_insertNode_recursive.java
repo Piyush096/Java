@@ -11,7 +11,7 @@ class Node{
         this.next = null;
     }
 }
-public class A_11_insertNode_recursive {
+public class A_04_insertNode_recursive {
 
     public static Node insNode(){
 
