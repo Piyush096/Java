@@ -55,6 +55,7 @@ public class A_13_reverse_ll {
          head.next = null;
          return smallhead;
     }
+    // another simplest form to reverse the linked list;
 
     public static void print_ll(Node head){
 
