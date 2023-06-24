@@ -68,7 +68,7 @@ public class A_14_middle_of_ll {
             tempNode = tempNode.next;
 
         }
-        System.out.println("null" + "  ");
+        System.out.println("null" + "  "); 
     }
 
     public static void main(String[] args){

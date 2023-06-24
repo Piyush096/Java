@@ -6,6 +6,7 @@ class Node{
     Node next;
 
     Node(int data){
+
         this.data = data;
         this.next = null;
     }
@@ -15,55 +16,38 @@ public class A_01_test{
 
     public static Node take_Node(){
 
-        Node head = null;
-        Node tail = null;
-
         Scanner in = new Scanner(System.in);
 
-         while(true)
-         {
+        Node tail = null;
+        Node head = null;
+
+        while(true){
+
             int data = in.nextInt();
-            
 
-            if (data == -1)
+            if(data == -1){
                 break;
+            }
 
-            Node currNode = new Node(data);
+            Node currentNode = new Node(data);
 
             if(head == null){
-                head = currNode;
-                tail = currNode;
+                head = currentNode;
+                tail = currentNode;
             }
             else{
-                tail.next = currNode;
-                tail = currNode;
+
+                tail.next = currentNode;
+                tail = currentNode;
             }
-         }
 
-
-        return head;
-    }
-
-    public static Node printNode(Node head){
-
-        Node temp = head;
-
-        while(temp != null){
-            System.out.print(temp.data+ " ");
-            temp = temp.next;
         }
         return head;
-    }
-    public static void main(String [] args){
-
-        Node head = take_Node();
-        printNode(head);
 
 
     }
 
 
-}
 
 
 
