@@ -53,20 +53,36 @@ public class A_12_print_reverse_ll{
         System.out.println();
     }
 
-    public static void reverse_ll(Node head){
+    // public static void reverse_ll(Node head){
 
-        if(head == null){
-            return;
-        }
+    //     if(head == null){
+    //         return;
+    //     }
 
-        reverse_ll(head.next);
-        System.out.print(head.data + " --> ");
+    //     reverse_ll(head.next);
+    //     System.out.print(head.data + " --> ");
+    // }
+
+    // now reversing the linked list by recursion
+
+    public static Node revese_linkedlist(Node head){
+
+        if(head == null || head.next == null)
+           return head;
+
+        Node new_head = revese_linkedlist(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return new_head;
     }
 
     public static void main(String[] args){
         Node head = takNode();
         print_ll(head);
-        reverse_ll(head);
+        head = revese_linkedlist(head);
+        print_ll(head);
+        // reverse_ll(head);
     }
 
 }

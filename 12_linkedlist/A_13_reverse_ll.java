@@ -55,7 +55,11 @@ public class A_13_reverse_ll {
     //      head.next = null;
     //      return smallhead;
     // }
+
+
+
     // another simplest form to reverse the linked list;
+    // this is an iterative method to revese the linked list;
 
     public static Node revNode(Node head){
 
