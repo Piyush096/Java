@@ -1,2 +1,100 @@
-ghghfghfghfghhsdhdhdfgfgdffgdfgdsfhdghdfgdgdggdhhdfdfdfh
-fgdfghdfgg
+inheritance is fundamental concept in object-oriented programming(oop) that allows
+a class to inherit properties and behaviors from anotherclass. in the terminology of
+java, a class that is inherites is called a superclass. and the class that does the inheriting is called
+a subclass.
+so we can say the subclass is specialized version of a superclass.
+to inherit the class we use the extend keyword.
+
+*no class can be the super class of itself
+
+
+Let's consider a real-life example to understand inheritance better.
+
+class Employee {
+    protected String name; //if we create the string as private in that case we cant access it in the subclass.
+    private int employeeId;
+
+    public Employee(String name, int employeeId) {
+        this.name = name;
+        this.employeeId = employeeId;
+    }
+
+    public void work() {
+        System.out.println(name + " is working.");
+    }
+
+    public void takeBreak() {
+        System.out.println(name + " is taking a break.");
+    }
+
+    public void attendMeeting() {
+        System.out.println(name + " is attending a meeting.");
+    }
+}
+
+class Manager extends Employee {
+    private String department;
+
+    public Manager(String name, int employeeId, String department) {
+        super(name, employeeId);
+        this.department = department;
+    }
+
+    public void manageTeam() {
+        System.out.println(name + " is managing the " + department + " team.");
+    }
+}
+
+class Developer extends Employee {
+    private String programmingLanguage;
+
+    public Developer(String name, int employeeId, String programmingLanguage) {
+        super(name, employeeId);
+        this.programmingLanguage = programmingLanguage;
+    }
+
+    public void code() {
+        System.out.println(name + " is coding in " + programmingLanguage + ".");
+    }
+}
+
+class Designer extends Employee {
+    private String designTool;
+
+    public Designer(String name, int employeeId, String designTool) {
+        super(name, employeeId);
+        this.designTool = designTool;
+    }
+
+    public void design() {
+        System.out.println(name + " is designing using " + designTool + ".");
+    }
+}
+class Test{
+    public Static void main(String[] args){
+        Manager manager = new Manager("John Doe", 12345, "IT");
+        manager.work();
+        manager.manageTeam();
+
+        Developer developer = new Developer("Jane Smith", 54321, "Java");
+        developer.work();
+        developer.code();
+
+        Designer designer = new Designer("Alice Johnson", 98765, "Photoshop");
+        designer.work();
+        designer.design();
+
+    }
+}
+
+important note :-
+/*
+No, you cannot directly access a private variable of the superclass from a subclass.
+Private variables are not visible or accessible in the subclasses.
+The private access modifier restricts the visibility of a variable or
+method to the class that declares it. It means that the private variable is only accessible
+within the class where it is declared, and it is not accessible to any subclasses or other
+classes outside the declaring class.
+If you want the subclass to have access to a variable defined in the superclass, you should
+use a different access modifier such as protected or public.
+ */

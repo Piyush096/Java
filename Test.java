@@ -1,14 +1,82 @@
 import java.util.Scanner;
 
+class Employee {
+    protected String name;
+    private int employeeId;
 
-class Test
-{
-    public static void main(String[] args)
-    {
+    public Employee(String name, int employeeId) {
+        this.name = name;
+        this.employeeId = employeeId;
+    }
 
+    public void work() {
+        System.out.println(name + " is working.");
+    }
 
+    public void takeBreak() {
+        System.out.println(name + " is taking a break.");
+    }
+
+    public void attendMeeting() {
+        System.out.println(name + " is attending a meeting.");
     }
 }
+
+class Manager extends Employee {
+    private String department;
+
+    public Manager(String name, int employeeId, String department) {
+        super(name, employeeId);
+        this.department = department;
+    }
+
+    public void manageTeam() {
+        System.out.println(name + " is managing the " + department + " team.");
+    }
+}
+
+class Developer extends Employee {
+    private String programmingLanguage;
+
+    public Developer(String name, int employeeId, String programmingLanguage) {
+        super(name, employeeId);
+        this.programmingLanguage = programmingLanguage;
+    }
+
+    public void code() {
+        System.out.println(name + " is coding in " + programmingLanguage + ".");
+    }
+}
+
+class Designer extends Employee {
+    private String designTool;
+
+    public Designer(String name, int employeeId, String designTool) {
+        super(name, employeeId);
+        this.designTool = designTool;
+    }
+
+    public void design() {
+        System.out.println(name + " is designing using " + designTool + ".");
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        Manager manager = new Manager("John Doe", 12345, "IT");
+        manager.work();
+        manager.manageTeam();
+
+        Developer developer = new Developer("Jane Smith", 54321, "Java");
+        developer.work();
+        developer.code();
+
+        Designer designer = new Designer("Alice Johnson", 98765, "Photoshop");
+        designer.work();
+        designer.design();
+    }
+}
+
 /*
 In Java, an interface is a blueprint of a class that defines a set of methods
 (and optionally constants) that any class implementing the interface must provide.
