@@ -6,6 +6,7 @@ class A_01_passingfun{
 
        int [] ros;
        ros = new int[5];
+       System.out.println();
 
       for(int i = 0; i < ros.length; i++){
         ros[i] = s.nextInt();

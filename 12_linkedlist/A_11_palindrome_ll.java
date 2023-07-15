@@ -97,3 +97,41 @@ public class A_11_palindrome_ll {
         System.out.println(isPalindrome(head));
     }
 }
+
+
+// using stack
+
+
+// public boolean isPalindrome(ListNode head) {
+//     if (head == null || head.next == null) {
+//         return true; // Empty or single-node list is considered a palindrome
+//     }
+
+//     ListNode slow = head;
+//     ListNode fast = head;
+
+//     while (fast != null && fast.next != null) {
+//         slow = slow.next;
+//         fast = fast.next.next;
+//     }
+
+//     if (fast != null) { // If the list has odd number of nodes, move slow pointer one step ahead
+//         slow = slow.next;
+//     }
+
+//     Stack<ListNode> stack = new Stack<>();
+
+//     while (slow != null) {
+//         stack.push(slow);
+//         slow = slow.next;
+//     }
+
+//     while (!stack.isEmpty()) {
+//         if (head.val != stack.pop().val) {
+//             return false;
+//         }
+//         head = head.next;
+//     }
+
+//     return true;
+// }
