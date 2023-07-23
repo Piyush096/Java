@@ -91,7 +91,7 @@ important note :-
 /*
 No, you cannot directly access a private variable of the superclass from a subclass.
 Private variables are not visible or accessible in the subclasses.
-The private access modifier restricts the visibility of a variable or
+The private access modifier restricts the visibility of a variable or 
 method to the class that declares it. It means that the private variable is only accessible
 within the class where it is declared, and it is not accessible to any subclasses or other
 classes outside the declaring class.

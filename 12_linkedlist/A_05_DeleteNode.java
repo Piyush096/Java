@@ -15,6 +15,13 @@ class Node{
 
 public class A_05_DeleteNode {
 
+    public static void main(String[] args) {
+
+        Node head = takNode();
+        head = DeleteNode(head, 3);
+        printNode(head);
+    }
+
     public static Node takNode(){
 
         Node head = null;
@@ -86,10 +93,5 @@ public class A_05_DeleteNode {
         System.out.println("Null");
     }
 
-    public static void main(String[] args) {
 
-        Node head = takNode();
-        head = DeleteNode(head, 3);
-        printNode(head);
-    }
 }
