@@ -49,7 +49,7 @@ class stack{
             throw new EmptyStackException();
         }
         return head.data;
-    }
+    }   
 
 }
 

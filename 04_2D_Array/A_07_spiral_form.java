@@ -41,25 +41,25 @@ public class A_07_spiral_form {
         while(count < noelements){
 
             for(i = col_start; count < noelements && i < ncol; ++i){
-                System.out.println(array[row_start][i]+ " ");
+                System.out.print(array[row_start][i]+ " ");
                 count++;
             }
             row_start++;
 
             for(i = row_start; count < noelements && i < nrow; ++i){
-                System.out.println(array[i][ncol - 1]+ " ");
+                System.out.print(array[i][ncol - 1]+ " ");
                 count++;
             }
             ncol--;
 
             for(i = ncol - 1; count < noelements && i >= col_start; --i){
-                System.out.println(array[nrow - 1][i]+ " ");
+                System.out.print(array[nrow - 1][i]+ " ");
                 count++;
             }
             nrow--;
 
             for(i = nrow - 1; count < noelements && i >= row_start; --i){
-                System.out.println(array[i][col_start] + " ");
+                System.out.print(array[i][col_start] + " ");
                 count++;
             }
             col_start++;

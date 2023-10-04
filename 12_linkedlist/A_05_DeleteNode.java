@@ -15,12 +15,6 @@ class Node{
 
 public class A_05_DeleteNode {
 
-    public static void main(String[] args) {
-
-        Node head = takNode();
-        head = DeleteNode(head, 3);
-        printNode(head);
-    }
 
     public static Node takNode(){
 
@@ -34,7 +28,7 @@ public class A_05_DeleteNode {
             int data = in.nextInt();
 
             if(data == -1)
-               break;
+            break;
 
             Node currNode = new Node(data);
 
@@ -93,5 +87,13 @@ public class A_05_DeleteNode {
         System.out.println("Null");
     }
 
+    public static void main(String[] args) {
+
+        Node head = takNode();
+        printNode(head);
+        head = DeleteNode(head, 3);
+        printNode(head);
+
+    }
 
 }

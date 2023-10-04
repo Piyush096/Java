@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 class Stack {
     private int capacity = 1000;
-    private String[] stack = new String[capacity];
+    private int[] stack = new int[capacity];
     private int top = -1;
 
-    public void push(String item) {
+    public void push(int item) {
         if (top < capacity - 1) {
             top++;
             stack[top] = item;
@@ -13,26 +13,26 @@ class Stack {
             System.out.println("Stack overflow. Cannot push item: " + item);
         }
     }
-
-    public String pop() {
-        if (!isEmpty()) {
-            String item = stack[top];
-            top--;
-            return item;
-        } else {
-            return null;
-        }
-    }
-
     public boolean isEmpty() {
         return top == -1;
     }
 
-    public String peek() {
+    public int pop() {
+        if (!isEmpty()) {
+            int item = stack[top];
+            top--;
+            return item;
+        } else {
+            throw new IllegalStateException("Stack is empty. Cannot pop from an empty stack.");
+        }
+    }
+
+
+    public int peek() {
         if (!isEmpty()) {
             return stack[top];
         } else {
-            return null;
+            throw new IllegalStateException("Stack is empty.");
         }
     }
 }
@@ -54,22 +54,22 @@ public class A_03_stack_using_Array {
 
             if (choice == 1) {
                 System.out.print("Enter the item to push: ");
-                String item = scanner.nextLine();
+                int item = scanner.nextInt();
                 stack.push(item);
                 System.out.println(item + " pushed to the stack.");
             } else if (choice == 2) {
-                String item = stack.pop();
-                if (item != null) {
+                try {
+                    int item = stack.pop();
                     System.out.println(item + " popped from the stack.");
-                } else {
-                    System.out.println("Stack is empty. Cannot pop from an empty stack.");
+                } catch (IllegalStateException e) {
+                    System.out.println(e.getMessage());
                 }
             } else if (choice == 3) {
-                String item = stack.peek();
-                if (item != null) {
+                try {
+                    int item = stack.peek();
                     System.out.println("The top item of the stack is: " + item);
-                } else {
-                    System.out.println("Stack is empty.");
+                } catch (IllegalStateException e) {
+                    System.out.println(e.getMessage());
                 }
             } else if (choice == 4) {
                 System.out.println("Exiting...");
