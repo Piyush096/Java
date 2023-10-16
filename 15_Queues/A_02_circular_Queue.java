@@ -1,18 +1,18 @@
 import java.util.*;
 
-class Queue{
+class circular_Queue{
     private int[] data;
     private int front;
     private int rear;
     private int size;
 
-    public Queue(){
-        data = new int[5];
+    public circular_Queue(){
+        data = new int[3];
         front = -1;
         rear = -1;
         size = 0;
     }
-    public Queue(int capacity){
+    public circular_Queue(int capacity){
         data = new int[capacity];
         front = -1;
         rear = -1;
@@ -29,14 +29,14 @@ class Queue{
 
     public void enqueue(int element){
 
-        if(rear == data.length -1){
+        if((rear + 1) % data.length == front){
             throw new IllegalStateException("queue is full");
         }
 
         if(size == 0){
             front = 0;
         }
-        rear++;
+        rear = (rear + 1) % data.length;
         data[rear] = element;
         size++;
 
@@ -53,20 +53,19 @@ class Queue{
 
     public int dequeue(){
 
-        if(size == 0)
-        {
+        if(size == 0){
             throw new IllegalStateException("queue is empty");
         }
 
         int element = data[front];
-        data[front] = 0;
 
-        if(front == rear){
+        if(rear == front)
+        {
             front = -1;
             rear = -1;
         }
         else{
-            front++;
+            front = (front + 1) % data.length;
         }
         size--;
         return element;
@@ -74,26 +73,13 @@ class Queue{
     }
 
 
-    // this method is only for the understanding purpose;
-    public void print_state()
-    {
-        System.out.print("\n\nQueue: ");
-        for (int i = 0; i < 5; ++i)
-            System.out.print(data[i] + " ");
-        System.out.println();
-
-        System.out.println("Front = " + front);
-        System.out.println("Rear = " + rear);
-        System.out.println("Size = " + size);
-    }
-
-
 }
 
-class A_01_queue_using_Array{
+
+public class A_02_circular_Queue {
     public static void main(String[] args) {
 
-        Queue queue = new Queue();
+        circular_Queue queue = new circular_Queue();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -115,8 +101,6 @@ class A_01_queue_using_Array{
                 queue.enqueue(item);
                 System.out.println(" done");
 
-                queue.print_state();
-
             }
 
              else if (choice == 2) {
@@ -127,8 +111,6 @@ class A_01_queue_using_Array{
                 catch (IllegalStateException e) {
                     System.out.println(e.getMessage());
                 }
-
-                queue.print_state();
             }
 
             else if (choice == 3) {
@@ -151,4 +133,5 @@ class A_01_queue_using_Array{
             }
         }
     }
+
 }
