@@ -11,7 +11,7 @@ class Node{
     }
 }
 
-public class A_17_insertion_in_circular_ll{
+public class C_17_insertion_in_circular_ll{
 
     public static Node take_Node(){
 

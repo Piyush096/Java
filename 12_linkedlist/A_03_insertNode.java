@@ -78,7 +78,7 @@ public class A_03_insertNode {
     }
     public static void main(String[] args){
         Node head = takeinput();
-        head = insert_node_ith_position(head, 3, 2);
+        head = insert_node_ith_position(head, 3, 0);
         printNode(head);
     }
 
