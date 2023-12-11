@@ -1,40 +1,86 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.LinkedList;
+import java.lang.Math;
 
-class test3
+public class WeaponBoxes
 {
     public static void main(String[] args)
     {
+        Scanner input = new Scanner(System.in);
 
+        LinkedList<Integer> new_linkedlist = new LinkedList<Integer>();
 
+        while (input.hasNext())
+        {
+            new_linkedlist.add(input.nextInt());
+        }
+
+        int k = new_linkedlist.get(new_linkedlist.size() - 1);
+        new_linkedlist.remove(new_linkedlist.size() - 1);
+
+        int n = new_linkedlist.get(new_linkedlist.size() - 1);
+        new_linkedlist.remove(new_linkedlist.size() - 1);
+
+        int current_cycles = 0;
+        int previously_new_unshifted = -1;
+
+        long answer = 0;
+
+        boolean res = true;
+
+        while (res)
+        {
+            for (int i = 0; i < n - 1; ++i)
+            {
+                int shifted = -1;
+                int new_unshifted = -1;
+
+                if (new_linkedlist.get(0) >= new_linkedlist.get(1))
+                {
+                    shifted = new_linkedlist.get(1);
+                    new_unshifted = new_linkedlist.get(0);
+                    new_linkedlist.remove(1);
+                    new_linkedlist.add(shifted);
+                }
+
+                else
+                {
+                    shifted = new_linkedlist.get(0);
+                    new_unshifted = new_linkedlist.get(1);
+                    new_linkedlist.remove(0);
+                    new_linkedlist.add(shifted);
+                }
+
+                int x = (int) Math.sqrt((8 * shifted) + 1);
+
+                if ((int) Math.pow(x, 2) != (8 * shifted) + 1)
+                {
+                    answer += shifted;
+                }
+
+                if (i == 0)
+                {
+                    if (new_unshifted == previously_new_unshifted)
+                    {
+                        ++current_cycles;
+                    }
+                }
+
+                if (new_unshifted != previously_new_unshifted)
+                {
+                    current_cycles = 1;
+                    previously_new_unshifted = new_unshifted;
+                }
+
+                if (current_cycles == k)
+                {
+                    res = false;
+                }
+            }
+        }
+
+        System.out.print(answer);
+
+        input.close();
     }
-      
-
-
 }
-    // public static int maljaroty_element(int[] arr){
-
-    //     HashMap<Integer, Integer> map = new HashMap<>();
-
-    //     for(int i = 0; i < arr.length; i++){
-    //         int element = arr[i];
-    //         map.put(element, map.getOrDefault(element, 0) + 1);
-
-   /*In this line of code, you are using the getOrDefault method to
-   retrieve the current value associated with the "element" key in the map.
-   If the key is not present in the map, it returns the default value of 0.
-   Then, you increment this value by 1 and put it back into the map using the put method.
-   This line of code ensures that if the "element" key is not already in the map,
-   it's initialized with a value of 1. */
-
-    //     }
-    //     for(Map.Entry<Integer, Integer> entry : map.entrySet()){
-    //         if(entry.getValue() > (arr.length / 2)){
-    //             return entry.getKey();
-    //         }
-    //     }
-    //     return -1;
-
-
-
-
-
