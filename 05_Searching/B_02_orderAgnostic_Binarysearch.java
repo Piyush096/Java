@@ -20,8 +20,8 @@ public class B_02_orderAgnostic_Binarysearch{
 
         int mid = start + (end - start ) / 2;
 
-
-         if(isAsc){
+        
+        if(isAsc){
 
         if(target < arr[mid]){
             end = mid -1;

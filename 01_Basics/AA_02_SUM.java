@@ -6,7 +6,7 @@ public class AA_02_SUM
         //System.out.print("value of a is ");
         Scanner scan = new Scanner(System.in);
 
-        int i = scan.nextInt();
+         int i = scan.nextInt();
         scan.nextLine();
         String str = scan.nextLine();
 
