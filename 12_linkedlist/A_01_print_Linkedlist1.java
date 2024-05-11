@@ -1,5 +1,3 @@
-
-
 // to take input and print the linked list;
 
 import java.util.Scanner;

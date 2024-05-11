@@ -42,14 +42,14 @@ class stack{
         int top = head.data;
         head = head.next;
         return top;
-        }
+        } 
 
     public int peek() throws EmptyStackException{
         if(isempty()){
             throw new EmptyStackException();
         }
         return head.data;
-    }   
+    }
 
 }
 
