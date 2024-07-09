@@ -13,7 +13,7 @@ class Node{
             this.data = data;
             next = null;
         }
-    }
+}
 class stack{
     Node head;
 
@@ -42,7 +42,7 @@ class stack{
         int top = head.data;
         head = head.next;
         return top;
-        } 
+    }
 
     public int peek() throws EmptyStackException{
         if(isempty()){
