@@ -1,31 +1,15 @@
+import java.util.*;
 
 class Demo {
-    public static void main(String[] args) {
-        String s = "aba";
-
-        // reversestring(s);
-        palindrome_check(s);
+    public static void main(String[] args){
+        factor(13);
     }
-    public static void palindrome_check(String s){
-        String s1 = s;
-        char[] new_s = s.toCharArray(); // using this we convert the string into the char of array;
-
-        int left = 0;
-        int right = new_s.length - 1;
-
-        while (left < right) {
-            char temp = new_s[left];
-            new_s[left] = new_s[right];
-            new_s[right] = temp;
-            left++;
-            right--;
-
-        }
-        String reversedString = new String(new_s);
-        if(s1.equals(reversedString)){
-            System.out.println("True");
-        } else {
-            System.out.println("False");
+    public static void factor(int number) {
+        System.out.println("factor of " + number + " are: ");
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                System.out.println(i);
+            }
         }
     }
 }
