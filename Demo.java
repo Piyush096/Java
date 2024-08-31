@@ -1,34 +1,50 @@
 import java.util.*;
 
-class Demo {
-    public static void main(String[] args){
-        factor(13);
-    }
-    public static void factor(int number) {
-        System.out.println("factor of " + number + " are: ");
-        for (int i = 1; i <= number; i++) {
-            if (number % i == 0) {
-                System.out.println(i);
-            }
-        }
+class Node {
+    int data;
+    Node next;
+    Node previous;
+
+    Node (int data) {
+        this.data = data;
+        next = null;
+        previous = null;
     }
 }
 
 
-/*
- * // Trim leading and trailing spaces and split by one or more spaces
-        String[] words = s.trim().split("\\s+");
+class Demo {
+    public static void main(String[] args){
+        Stack s = new Stack();
 
-        // Use StringBuilder to efficiently reverse the words
-        StringBuilder reversed = new StringBuilder();
+    }
 
-        // Iterate over the words array in reverse order
-        for (int i = words.length - 1; i >= 0; i--) {
-            reversed.append(words[i]);
-            if (i > 0) {
-                reversed.append(" "); // Add space between words
+    public static Node insertnode() {
+        Node head = null;
+        Node tail = null;
+
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+
+            int data = sc.nextInt();
+
+            if (data == -1) {
+                break;
+            }
+
+            Node newnode = new Node(data);
+
+            if (head == null) {
+                head = newnode;
+                tail = newnode;
+            }
+            else {
+                tail.next = newnode;
+                newnode.previous = tail;
+                tail = newnode;
             }
         }
-
-        return reversed.toString();
- */
+        return head;
+    }
+}

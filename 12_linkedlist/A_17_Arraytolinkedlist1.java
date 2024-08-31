@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 
 class Node {
@@ -9,14 +10,7 @@ class Node {
         next = null;
     }
 }
-public class Dem1 {
-    public static void main(String[] args) {
-        int [] arr = {5, 8, 2, 9};
-        System.out.println("Given array is :-" + Arrays.toString(arr));
-        Node head = insertNode(arr);
-        System.out.print("New linked list is :- " );
-        pritnll(head);
-    }
+public class A_17_Arraytolinkedlist1 {
 
     public static Node insertNode(int[] arr) {
         Node head = null;
@@ -47,4 +41,12 @@ public class Dem1 {
         }
         System.out.println("-> null");
     }
+    public static void main(String[] args) {
+        int [] arr = {5, 8, 2, 9};
+        System.out.println("Given array is :-" + Arrays.toString(arr));
+        Node head = insertNode(arr);
+        System.out.print("New linked list is :- " );
+        pritnll(head);
+    }
 }
+

@@ -33,7 +33,6 @@ public class A_02_searching_char {
         }
 
         for (int i = 0; i < str.length(); i++){
-T
             if (count[(int)str.charAt(i)] > 1)
                 System.out.print(str.charAt(i));
 
