@@ -12,7 +12,7 @@ class Node {
         prev = null;
     }
 }
-public class Dem1 {
+public class B_03_deletehead{
     public static void main(String[] args) {
         Node head = insertNode();
         pritnll(head);
