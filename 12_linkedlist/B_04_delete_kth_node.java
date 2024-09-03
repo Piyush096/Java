@@ -15,7 +15,7 @@ public class B_04_delete_kth_node {
     public static void main(String[] args) {
         Node head = insertNode();
         printnode(head);
-        head = delelkthnode(head, 2);
+        head = delelkthnode(head, 1);
         printnode(head);
     }
     public static Node insertNode(){
@@ -72,16 +72,16 @@ public class B_04_delete_kth_node {
             return null;
         }
         if(front == null){
-            Node previous = temp.prev;
-            previous.next = null;
+
+            back.next = null;
             temp.prev = null;
             return head;
+
         }
         if(back == null){
-            Node temp1 = temp;
-            temp = temp.next;
-            temp1.next = null;
-            temp.prev = null;
+            head = front;
+            front.prev = null;
+            temp.next = null;
             return head;
         }
         else {
