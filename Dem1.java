@@ -46,13 +46,12 @@ public class Dem1 {
         }
         return head;
     }
-    public static Node deleltehead(Node head){
+    public static Node kthNode(Node head, int k){
         Node temp = head;
-        head = head.next;
-        temp.next = null;
-        head.prev = null;
 
-        return head;
+        while (temp) {
+
+        }
     }
 
     public static void pritnll(Node head) {
