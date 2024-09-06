@@ -1,23 +1,11 @@
-import java.util.Scanner;
-public class A_05{
-    public static void main(String[] args){
-
-        Scanner input = new Scanner(System.in);
-
-        int n = input.nextInt();
-
-        for(int row = 0; row < 2 * n; row++){
-            // for every row, run the col
-            int temp = row > n ? 2 * n - row : row;
-
-            for(int col = 0; col < temp; col++){
-
-                System.out.print("* ");
-
-            }
-
-            System.out.println( );
-
-        }
+/**
+ output
+ 1 2 3 4 5 
+ */
+public class A_05 {
+    public static void main(String[] args) {
+        for (int i = 5; i >= 1; i--) {
+			System.out.print(i + " ");
+		}
     }
 }

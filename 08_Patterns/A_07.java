@@ -1,31 +1,12 @@
-import java.util.Scanner;
-public class A_07{
-    public static void main(String[] args){
-
-        Scanner input = new Scanner(System.in);
-
-        int n = input.nextInt();
-
-        for(int row = 1; row <= n; row++){
-
-            int no_of_spaces = n - row;
-            for(int s = 0; s < no_of_spaces; s++){
-                System.out.print(" ");
-            }
-
-
-            for(int col =row; col >= 1; col--){
-
-                System.out.print(row);
-            }
-            for(int col = 2 ; col <= row; col++){
-
-                System.out.print(row);
-            }
-
-
-             System.out.println( );
-
+/**
+ output
+ A B A D E
+ 
+ */
+public class A_07 {
+    public static void main(String[] args) {
+        for(int i = 0; i < 5; i++) {
+            System.out.print((char)('A' + i) + " ");
         }
     }
 }

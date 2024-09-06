@@ -1,65 +1,30 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-class Node {
-    int data;
-    Node next;
-    Node prev;
-
-    Node (int data) {
-        this.data = data;
-        next = null;
-        prev = null;
-    }
-}
 public class Dem1 {
     public static void main(String[] args) {
-        Node head = insertNode();
-        pritnll(head);
-        head = deleltehead(head);
-        pritnll(head);
-    }
-
-    public static Node insertNode() {
-        Node head = null;
-        Node tail = null;
-
-        Scanner sc = new Scanner(System.in);
-
-        while(true) {
-            int data = sc.nextInt();
-
-            if(data == -1) {
-                break;
+        for(int i = 1; i <= 5; i++){
+            for(int j = 1; j <= 6 - i; j++){
+                System.out.print(j);
             }
-
-            Node newnNode = new Node(data);
-
-            if(head == null) {
-                head = newnNode;
-                tail = newnNode;
-            }else {
-                tail.next = newnNode;
-                newnNode.prev = tail;
-                tail = newnNode;
+            for(int k = 1; k < i; k++){
+                System.out.print(" ");
+            }for(int j = 1; j < i; j++){
+                System.out.print(" ");
             }
+            for(int k = 6 - i; k >= 1; k--){
+                System.out.print(k);
+            }
+            System.out.println();
         }
-        return head;
-    }
-    public static Node kthNode(Node head, int k){
-        Node temp = head;
-
-        while (temp) {
-
-        }
-    }
-
-    public static void pritnll(Node head) {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.data+ " ");
-            temp = temp.next;
-        }
-        System.out.println("-> null");
     }
 }
+/*OUTPUT
+
+1234554321
+1234  4321
+123    321
+12      21
+1        1
+
+*/

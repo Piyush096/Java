@@ -1,30 +1,14 @@
-import java.util.Scanner;
-public class A_02{
-    public static void main(String[] args){
+/**
+Output
 
-        Scanner input = new Scanner(System.in);
+* * * * *
 
-        System.out.println("Enter no of rows");
-        int n = input.nextInt();
+ */
+public class A_02 {
+    public static void main(String[] args) {
 
-        for(int row = 1; row <= n; row++){
-            for(int col = 1; col <= n; col++){
-
-                System.out.print("*");
-            }
-             System.out.println();
-        }
-    }
+		for (int i = 1; i <= 5; i++) {
+			System.out.print("*" + " ");
+		}
+	}
 }
-
-/*output:-
-
-n = 5
-
-*****
-*****
-*****
-*****
-*****
-
-*/
